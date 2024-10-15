@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violeta: #674BD2;
+    --azul-oscuro: #081d28;
+    --azul: #1a283a;
+    --gris: #363649;
+    --purpura: #a961d9;
+    --blanco: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #182437;
+}
