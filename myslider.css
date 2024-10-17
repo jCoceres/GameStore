@@ -1,16 +1,20 @@
 .slider-frame {
-    aspect-ratio: 9 / 5;
-    border-radius: 12px;
-    height: auto;
-    background-color: #233142;
+    position: relative;
     margin: 50px auto;
-    overflow: hidden;
-    width: 70%;
-
+    width: 70vw;
 }
 
-.slider-frame ul {
+.slider-items {
+    aspect-ratio: 9 / 5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slider-items ul {
     animation: slide 30s infinite alternate ease-in-out;
+    display: flex;
+    height: 100%;
+    width: 400%;
 }
 
 @keyframes slide {
@@ -111,4 +115,21 @@
 .slider-frame img {
     object-fit: cover;
     width: 100%;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    border-radius: 4px;
+    top: 50%;
+}
+
+.left {
+    left: -45px;
+}
+
+.right {
+    right: -45px;
 }
