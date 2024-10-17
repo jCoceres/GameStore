@@ -6,25 +6,22 @@
 
 🎯 Objetivos del Proyecto
 
- Crear una tienda en línea que permita la compra y descarga de videojuegos digitales.
+ Crear una tienda en línea que simule la compra y descarga de videojuegos digitales.
  Implementar funcionalidades típicas de plataformas conocidas: gestión de usuarios, catálogo de juegos, reseñas y recomendaciones.
  Practicar habilidades técnicas en desarrollo web, bases de datos y manejo de interfaces de usuario atractivas.
 
 🛠️ Tecnologías Utilizadas
 
  Frontend: HTML5, CSS3, JavaScript
- <!-- Backend: Node.js, Python (Django/Flask) u otro entorno de servidor -->
- <!-- Base de Datos: MySQL, PostgreSQL o MongoDB -->
  Control de versiones: Git y GitHub
- <!-- Despliegue: Docker, Heroku, Vercel o plataformas similares (opcional) -->
 
 📑 Funcionalidades Principales
 
  Catálogo de Videojuegos: Visualización de todos los juegos disponibles con categorías y filtros.
  Registro e Inicio de Sesión: Permitir a los usuarios crear cuentas y gestionar sus perfiles.
  Sistema de Carrito de Compras: Los usuarios podrán añadir juegos al carrito y proceder al pago.
- <!-- Valoraciones y Comentarios: Los usuarios podrán dejar reseñas y valorar los juegos que han comprado. -->
- <!-- Historial de Compras: Cada usuario podrá ver sus compras anteriores y gestionar sus descargas. -->
+Valoraciones y Comentarios: Los usuarios podrán dejar reseñas y valorar los juegos que han comprado.
+Historial de Compras: Cada usuario podrá ver sus compras anteriores y gestionar sus descargas.
 
 👥 Contribuidores
 
@@ -35,9 +32,7 @@
 📌 Estado del Proyecto
 
  Implementación del frontend
- <!-- Configuración del backend -->
- <!-- Integración de la base de datos -->
- <!-- Pruebas y validación final -->
+
 
 📝 Licencia
  Este proyecto se desarrolla con fines educativos y no tiene fines comerciales.
