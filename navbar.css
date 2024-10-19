@@ -30,7 +30,7 @@ header {
     height: 100%;
 }
 
-.nav-left a h3 {
+#logo-container h3 {
     background: linear-gradient(to bottom, var(--purpura), var(--violeta));
     background-clip: text;
     font-size: 2rem;
@@ -43,7 +43,6 @@ header {
     fill: var(--violeta);
     margin-left: 18px;
     width: 38px;
-    min-width: 38px;
     stroke: var(--violeta);
 }
 
@@ -161,6 +160,16 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 @media (max-width:1200px) {
+    #logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+
+    .logo {
+        width: 28px;
+    }
+
     .menu {
         display: inline-block;
     }
@@ -177,4 +186,28 @@ input[type="search"]::-webkit-search-cancel-button {
     .nav-left div h3 {
         font-size: 1.6rem;
     }
+}
+
+@media (max-width:540px) {
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        width: 100%;
+    }
+
+    #logo-container {
+        position: static;
+        transform: none;
+
+        svg {
+            margin-right: 20px;
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
 }

@@ -102,10 +102,10 @@
     border: none;
     border-radius: 16px;
     color: #ffffff;
+    cursor: pointer;
     font-size: 1.4rem;
-    height: 45px;
-    margin-top: 32px;
-    width: 90px;
+    padding: 14px 0;
+    width: 95px;
 }
 
 .slider-frame-description button:hover {
@@ -120,16 +120,83 @@
 .arrow {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 30px;
-    height: 35px;
+    width: 34px;
+    height: 42px;
     border-radius: 4px;
-    top: 50%;
+    bottom: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+}
+
+.arrow i {
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+
+.arrow i:hover {
+    color: var(--violeta);
+
 }
 
 .left {
-    left: -45px;
+    left: -48px;
+
 }
 
 .right {
-    right: -45px;
+    right: -48px;
+}
+
+@media (max-width:1200px) {
+    .slider-frame-description {
+        width: 60%;
+        padding: 40px;
+
+        div {
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        button {
+            width: 80px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .slider-frame-description {
+        padding: 20px;
+
+        div {
+
+            p,
+            h2 {
+                display: none;
+            }
+        }
+
+        button {
+            padding: 8px 0;
+            width: 56px;
+            font-size: 1rem;
+        }
+    }
+
+    .arrow {
+        width: 28px;
+        height: 38px;
+        /* bottom: 35%; */
+    }
+
+    .arrow i {
+        font-size: 1.5rem;
+    }
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b75045b19a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="myslider.css">
@@ -30,9 +31,9 @@
                 </span>
 
                 <!-- logo -->
-
-                <a href="index.html">
-                    <svg class="logo" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.44 170.08">
+                <a href="index.html" id="logo-container">
+                    <svg class="logo" stroke-width="2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 149.44 170.08">
                         <g data-name="perfil de troquel">
                             <g>
                                 <path
@@ -110,6 +111,7 @@
     </header>
     <main>
         <section>
+            <!-- carrousel -->
             <div class="slider-frame">
                 <div class="slider-items">
                     <ul>
@@ -122,7 +124,6 @@
                                         ancestral
                                         para escapar de una ciudad caída en el olvido y encontrar el camino a casa.</p>
                                 </div>
-
                                 <button>$3.99</button>
                             </div>
                             <img src="/img/stray-cat-slider.jpg" alt="stray-cat">
@@ -169,8 +170,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="arrow left"></div>
-                <div class="arrow right"></div>
+                <div class="arrow left"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class=" arrow right"><i class="fa-solid fa-chevron-right fa-flip-horizontal"></i></div>
             </div>
         </section>
     </main>
