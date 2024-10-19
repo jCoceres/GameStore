@@ -20,4 +20,9 @@ html {
 body {
     font-family: "Nunito", sans-serif;
     background-color: #182437;
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
 }
