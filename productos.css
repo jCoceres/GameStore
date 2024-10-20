@@ -1,11 +1,41 @@
 .main-container {
     margin-top: 70px;
+
 }
 
-.main-container h2 {
+.main-container>div:first-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.product-title {
     color: var(--blanco);
-    text-align: center;
-    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.product-title::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--purpura), var(--violeta));
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-title:hover::before {
+    transform: scaleX(1);
+}
+
+.product-title[data-animation="center"] .product-title::before {
+    transform-origin: center;
 }
 
 .cards-container {
@@ -61,11 +91,20 @@
     height: 70%;
 }
 
+.favicon.active {
+    fill: #ff3040;
+    stroke: none;
+}
+
+.favicon.active:hover {
+    stroke: none;
+}
+
 .card-fav:hover {
     border-color: rgba(255, 255, 255, 0.5);
     ;
 
-    svg {
+    svg:not(.active) {
         stroke: rgba(255, 255, 255, 0.5);
     }
 
