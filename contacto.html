@@ -71,7 +71,7 @@
                 <ul>
                     <!-- usuario -->
                     <li>
-                        <a href="#">
+                        <a href="login.html">
                             <svg stroke="#ffffff" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -108,29 +108,33 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-contact">
         <section class="form-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d176787.1868545579!2d-58.48966005219097!3d-34.580218484695855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1729476222340!5m2!1ses!2sar"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form action="" method="post" class="contact-form">
-                <div class="title-container" data-animation="center">
-                    <h1 class="title decoration">Contacto</h1>
-                </div>
-                <label for="nombre" class="label">Nombre *</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input focus" required>
-                <label for="apellido" class="label">Apellido *</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="input focus" required>
-                <label for="email" class="label">Correo electronico *</label>
-                <input type="email" name="email" id="email" placeholder="Correo" class="input focus" required>
-                <label for="asunto" class="label">Asunto *</label>
-                <input type="text" name="asunto" id="asunto" class="input focus" required>
-                <label for="mensaje" class="label">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="6" class="message focus" placeholder="Mensaje"
-                    required></textarea>
-                <span class="span">* Campos obligatorios</span>
-                <button type="submit" class="primary-button">Enviar</button>
-            </form>
+            <div class="login">
+                <form action="" method="post" class="contact-form">
+                    <div class="title-container" data-animation="center">
+                        <h1 class="title decoration">Contacto</h1>
+                    </div>
+                    <label for="nombre" class="label">Nombre *</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input focus" required>
+                    <label for="apellido" class="label">Apellido *</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="input focus"
+                        required>
+                    <label for="email" class="label">Correo electronico *</label>
+                    <input type="email" name="email" id="email" placeholder="Correo" class="input focus" required>
+                    <label for="asunto" class="label">Asunto *</label>
+                    <input type="text" name="asunto" id="asunto" class="input focus" required>
+                    <label for="mensaje" class="label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="6" class="message focus" placeholder="Mensaje"
+                        required></textarea>
+                    <span class="span">* Campos obligatorios</span>
+                    <button type="submit" class="primary-button btn">Enviar</button>
+                </form>
+            </div>
+
         </section>
     </main>
     <footer id="footer">

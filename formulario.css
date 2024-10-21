@@ -1,44 +1,83 @@
 .form-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 80px;
     margin-top: 60px;
+    width: 600px;
 }
 
 .form-container iframe {
     border: none;
     height: 340px;
+    width: 100%;
     margin-bottom: 60px;
-    width: 600px;
     border-radius: 10px;
 }
 
 .contact-form {
-    background-color: rgba(8, 29, 40, 0.3);
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(8, 29, 40, 0.3);
+    border-radius: 12px;
     padding: 30px;
-    width: 600px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 50px;
+    cursor: pointer;
+    opacity: 80%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.main-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .primary-button {
     background-color: rgba(103, 75, 210, 1);
-    height: 46px;
     border-radius: 10px;
-    cursor: pointer;
     margin-top: 6px;
     color: var(--blanco);
-    opacity: 80%;
-    font-size: 1.6rem;
     border: 1px var(--gris) solid;
+}
+
+.secondary-button {
+    background-color: rgba(8, 29, 40, 0.3);
+    border-radius: 8px;
+    border: 1px solid var(--violeta);
+    color: var(--violeta);
+}
+
+.signup-button {
+    margin-top: 60px;
 }
 
 .title {
     color: var(--violeta);
     font-size: 2.8rem;
     text-align: center;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .input {
@@ -80,10 +119,29 @@
     font-family: inherit;
 }
 
-@media (max-width:650px) {
+.btn a {
+    color: var(--violeta);
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding-top: 15px;
+    font-weight: bold;
 
-    .form-container iframe,
+}
+
+@media (max-width: 650px) {
+    .form-container {
+        height: 100%;
+        margin: 0;
+    }
+
+    .login {
+        height: 100%;
+    }
+
     .contact-form {
-        width: 100%;
+        height: 100%;
+        justify-content: space-between;
     }
 }
