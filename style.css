@@ -24,6 +24,9 @@ body {
     background-color: #182437;
     font-size: 1.6rem;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -32,6 +35,9 @@ li {
 
 main {
     padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .title-container {
