@@ -82,7 +82,7 @@
 
 @media (max-width:800px) {
     .cards-container {
-        grid-template-columns: repeat(auto-fill, 160px);
+        grid-template-columns: repeat(auto-fill, 170px);
     }
 
     .product-card figure figcaption {

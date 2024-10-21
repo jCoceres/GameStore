@@ -53,7 +53,7 @@
 .primary-button {
     background-color: rgba(103, 75, 210, 1);
     border-radius: 10px;
-    margin-top: 6px;
+    margin-top: 40px;
     color: var(--blanco);
     border: 1px var(--gris) solid;
 }
