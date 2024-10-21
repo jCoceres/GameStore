@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formulario.css">
     <link rel="stylesheet" href="footer.css">
     <title>Document</title>
 </head>
@@ -53,7 +54,7 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
                 <!-- buscador -->
-                <form action="#" method="post">
+                <form action="#" method="post" class="focus">
                     <input type="search" name="buscar" placeholder="Search">
                     <button type="submit" aria-label="buscar">
                         <svg class="asd" stroke="black" fill="#ffffff" stroke-width="0" viewBox="0 0 512 512"
@@ -108,8 +109,28 @@
         </nav>
     </header>
     <main>
-        <section>
-
+        <section class="form-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d176787.1868545579!2d-58.48966005219097!3d-34.580218484695855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1729476222340!5m2!1ses!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="" method="post" class="contact-form">
+                <div class="title-container" data-animation="center">
+                    <h1 class="title decoration">Contacto</h1>
+                </div>
+                <label for="nombre" class="label">Nombre *</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input focus" required>
+                <label for="apellido" class="label">Apellido *</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="input focus" required>
+                <label for="email" class="label">Correo electronico *</label>
+                <input type="email" name="email" id="email" placeholder="Correo" class="input focus" required>
+                <label for="asunto" class="label">Asunto *</label>
+                <input type="text" name="asunto" id="asunto" class="input focus" required>
+                <label for="mensaje" class="label">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="6" class="message focus" placeholder="Mensaje"
+                    required></textarea>
+                <span class="span">* Campos obligatorios</span>
+                <button type="submit" class="primary-button">Enviar</button>
+            </form>
         </section>
     </main>
     <footer id="footer">

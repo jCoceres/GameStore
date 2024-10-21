@@ -1,0 +1,89 @@
+.form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.form-container iframe {
+    border: none;
+    height: 340px;
+    margin-bottom: 60px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    background-color: rgba(8, 29, 40, 0.3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 600px;
+}
+
+.primary-button {
+    background-color: rgba(103, 75, 210, 1);
+    height: 46px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    color: var(--blanco);
+    opacity: 80%;
+    font-size: 1.6rem;
+    border: 1px var(--gris) solid;
+}
+
+.title {
+    color: var(--violeta);
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.input {
+    background-color: rgba(54, 54, 73, 0.4);
+    border: 1px var(--gris) solid;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    height: 38px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 1.8rem;
+}
+
+.label {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+}
+
+.span {
+    padding-top: 26px;
+    padding-bottom: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+}
+
+.message {
+    background-color: rgba(54, 54, 73, 0.4);
+    border: 1px var(--gris) solid;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    margin-top: 6px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 1.8rem;
+    padding-top: 8px;
+    font-family: inherit;
+}
+
+@media (max-width:650px) {
+
+    .form-container iframe,
+    .contact-form {
+        width: 100%;
+    }
+}

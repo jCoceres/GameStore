@@ -145,7 +145,7 @@ input[type="search"]::-webkit-search-cancel-button {
     color: var(--violeta);
 }
 
-.nav-left form:focus-within {
+.focus:focus-within {
     background-color: #233142;
 }
 

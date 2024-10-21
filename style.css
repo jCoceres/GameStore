@@ -5,13 +5,15 @@
 }
 
 :root {
-    --violeta: #674BD2;
-    --azul-oscuro: #081d28;
+    --violeta: rgba(103, 75, 210, 1);
+    --azul-oscuro: rgba(8, 29, 40, 1);
     --azul: #1a283a;
-    --gris: #363649;
+    --gris: rgba(54, 54, 73, 1);
     --purpura: #a961d9;
     --blanco: #ffffff;
 }
+
+
 
 html {
     font-size: 62.5%;
@@ -25,4 +27,39 @@ body {
 
 li {
     list-style: none;
+}
+
+
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.decoration {
+    position: relative;
+}
+
+.decoration::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--purpura), var(--violeta));
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.decoration:hover::before {
+    transform: scaleX(1);
+}
+
+.title-container[data-animation="center"] .decoration::before {
+    transform-origin: center;
 }
