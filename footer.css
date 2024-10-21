@@ -1,10 +1,9 @@
 #footer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    /* height: 200px; */
     background-color: var(--azul-oscuro);
     box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
 }
 
 .payment-methods {
@@ -21,17 +20,9 @@
     opacity: 90%;
 }
 
-.payment-methods ul {
-    display: flex;
-}
-
-.payment-methods ul li a {
-    list-style: none;
-    margin: 10px 12px;
-}
-
 .icons-payment {
     display: inline-block;
+    margin: 10px 12px;
 }
 
 .icons-payment svg {
@@ -40,27 +31,22 @@
 
 .politicas {
     margin: 10px 0;
+    color: var(--violeta);
     display: flex;
-    width: 100vw;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .politicas a {
+    color: inherit;
     text-decoration: none;
-    font-size: 1.6rem;
-    color: var(--violeta);
 }
 
 .politicas span {
-    color: var(--violeta);
-    font-size: 1.6rem;
     margin: 0 12px;
 }
 
-
 .copyright {
-    font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
     text-align: center;
@@ -68,7 +54,7 @@
 
 @media (max-width:850px) {
 
-    .politicas a,
+    .politicas,
     .copyright {
         font-size: 1.4rem;
     }
