@@ -37,6 +37,11 @@
     justify-content: center;
 }
 
+.politicas a:hover {
+    color: var(--blanco);
+    opacity: 90%;
+}
+
 .politicas a {
     color: inherit;
     text-decoration: none;

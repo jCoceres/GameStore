@@ -3,12 +3,10 @@
     width: 90%;
 }
 
-
-
 .cards-container {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fill, 380px);
+    grid-template-columns: repeat(auto-fill, 350px);
     place-content: center;
 }
 
@@ -83,7 +81,7 @@
 
 @media (max-width:800px) {
     .cards-container {
-        grid-template-columns: repeat(auto-fill, 170px);
+        grid-template-columns: repeat(auto-fill, 220px);
     }
 
     .product-card figure figcaption {
