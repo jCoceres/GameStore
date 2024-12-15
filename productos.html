@@ -20,7 +20,7 @@
         <nav class="nav">
             <div class="nav-left">
                 <!-- menu -->
-                <span class="menu">
+                <span class="menu" id="menuMobile">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 15 15" height="20px"
                         width="20px" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -45,7 +45,8 @@
                     <h3>Game Store</h3>
                 </a>
                 <!-- lista -->
-                <ul>
+                <ul id="navigation">
+                    <li id="closeMenu">x</li>
                     <li><a class="inicio" href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="reseñas.html">Reseñas</a></li>
@@ -422,7 +423,7 @@
         </div>
         <p class="copyright"> © 2024 GameStore.com. Todos los derechos reservados.</p>
     </footer>
-    <script>
+    <script src="index.js">
         const enlaces = document.querySelectorAll('.card-fav');
         enlaces.forEach((enlace) => {
             enlace.addEventListener('click', (event) => {
