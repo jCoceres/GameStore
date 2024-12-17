@@ -69,6 +69,10 @@
     color: var(--violeta);
 }
 
+.primary-button a {
+    color: var(--blanco);
+}
+
 .signup-button {
     margin-top: 60px;
 }
@@ -142,6 +146,16 @@
     padding-top: 15px;
     font-weight: bold;
 
+}
+
+.user {
+    color: var(--violeta);
+    margin-bottom: 32px;
+}
+
+.passError {
+    color: rgb(187, 44, 44);
+    display: none;
 }
 
 @media (max-width: 650px) {

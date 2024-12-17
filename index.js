@@ -10,9 +10,9 @@ closeMenu.addEventListener("click", function () {
 // productos
 const enlaces = document.querySelectorAll('.card-fav');
 enlaces.forEach((enlace) => {
-    enlace.addEventListener('click', (event) => {
-        event.preventDefault();
+    enlaces.addEventListener('click', (event) => {
         const svg = enlace.querySelector('.svgIcon');
         svg.classList.toggle("active");
     });
 });
+

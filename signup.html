@@ -110,7 +110,7 @@
     <main class="main-login">
         <section class="form-container">
             <div class="login">
-                <form action="/" class="contact-form">
+                <form id="formularioSignUp" class="contact-form">
                     <div class="form-info">
                         <div class="title-container" data-animation="center">
                             <h1 class="title decoration">Mi cuenta</h1>
@@ -122,13 +122,16 @@
                         <label for="contraseña" class="label">Contraseña *</label>
                         <input type="password" name="contraseña" placeholder="*********" id="contraseña"
                             class="input focus">
+                        <span class="passError">La contraseña debe tener al menos 8
+                            caracteres.</span>
                     </div>
-                    <input type="submit" class="primary-button btn" value="Crear">
+                    <button type="submit" id="createButton" class="primary-button btn">
+                        Crear</button>
                 </form>
             </div>
         </section>
     </main>
-
+    <script src="signup.js"></script>
 </body>
 
 </html>

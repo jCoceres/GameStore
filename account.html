@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="formulario.css">
-    <link rel="stylesheet" href="footer.css">
-    <title>Document</title>
+    <title>login</title>
 </head>
 
 <body>
@@ -71,7 +70,7 @@
                 <ul>
                     <!-- usuario -->
                     <li>
-                        <a href="#">
+                        <a href="/login.html">
                             <svg stroke="#ffffff" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -111,27 +110,25 @@
     <main class="main-login">
         <section class="form-container">
             <div class="login">
-                <div class="contact-form">
-                    <form action="/" method="post" class="form-info">
-
+                <form id="formularioAccount" class="contact-form">
+                    <div class="form-info">
                         <div class="title-container" data-animation="center">
-                            <h1 class="title decoration">Iniciar Sesión</h1>
+                            <h1 class="title decoration">Mi cuenta</h1>
                         </div>
-                        <label for="email" class="label">Email *</label>
-                        <input type="email" name="email" id="email" placeholder="Correo" class="input focus" required>
-                        <label for="contraseña" class="label">Contraseña *</label>
-                        <input type="password" name="contraseña" placeholder="*********" id="contraseña"
-                            class="input focus" required>
-                        <input type="submit" class="primary-button btn" value="Ingresar">
-                        <a href="#" class="span">¿Olvidaste tu contraseña?</a>
-
-                    </form>
-                    <button class="secondary-button btn signup-button"><a href="/signup.html">sing up</a></button>
-                </div>
+                        <h3 class="label">Nombre</h3>
+                        <p id="usuario" class="user">Jennifer Coceres</p>
+                        <h3 class="label">Email</h3>
+                        <p id="correo" class="user">jennifer@gmail.com</p>
+                        <h3 class="label">Contraseña</h3>
+                        <input type="password" id="contraseña" class="user" style="border:none; background:none;"
+                            readonly>
+                    </div>
+                    <button class="primary-button btn" type="submit">Editar</button>
+                </form>
             </div>
         </section>
     </main>
-    <script src="index.js"></script>
+    <script src="account.js"></script>
 </body>
 
 </html>
